@@ -30,3 +30,28 @@ CREATE TABLE Employee_Payroll (
   set Gender='M' where name='Dnyanesh' or name='Mark' or name='Charlie' or name='Bobby' or name='Yash'
   Update employee_payroll 
   set Gender='F' where name='Saumya' or name='Rutuja'
+
+  select * From Employee_Payroll
+
+ ALTER TABLE Employee_Payroll ALTER COLUMN Salary int
+ select * from Employee_Payroll
+
+ SELECT SUM(Salary) as Total_Salary_Of_All_Female_Employee FROM Employee_Payroll WHERE Gender = 'F' GROUP BY Gender
+
+ SELECT SUM(Salary) as Total_Salary_Of_All_Male_Employee FROM Employee_Payroll WHERE Gender = 'M' GROUP BY Gender
+
+ SELECT AVG(Salary) as Average_Salary_For_Female_Employee FROM Employee_Payroll WHERE Gender = 'F' GROUP BY Gender
+
+ SELECT AVG(Salary) as Average_Salary_For_Male_Employee FROM Employee_Payroll WHERE Gender = 'M' GROUP BY Gender
+
+ SELECT MIN(Salary) as Minimum_Salary_Umong_All_Female_Employee FROM Employee_Payroll WHERE Gender = 'F' GROUP BY Gender
+
+ SELECT MIN(Salary) as Minimum_Salary_Umong_All_Male_Employee  FROM Employee_Payroll WHERE Gender = 'M' GROUP BY Gender
+
+ SELECT MAX(Salary) as Maximum_Salary_Umong_All_Female_Employee FROM Employee_Payroll WHERE Gender = 'F' GROUP BY Gender
+
+ SELECT MAX(Salary) as Maximum_Salary_Umong_All_Male_Employee FROM Employee_Payroll WHERE Gender = 'M' GROUP BY Gender
+
+ SELECT COUNT(Name) as Total_Count_Of_Female_Employee FROM Employee_Payroll WHERE Gender = 'F' GROUP BY Gender
+
+ SELECT COUNT(Name) as Total_Count_Of_Male_Employee FROM Employee_Payroll WHERE Gender = 'M' GROUP BY Gender
