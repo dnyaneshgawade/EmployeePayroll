@@ -19,3 +19,14 @@ CREATE TABLE Employee_Payroll (
   Select Salary from  Employee_Payroll where Name='Dnyanesh'
 
   Select Salary from Employee_Payroll where Start_Date between ('2018-01-01') and ('2020-12-31')
+
+
+  alter table Employee_Payroll ADD Gender varchar(5)
+  
+  INSERT INTO Employee_Payroll (Name,Salary,Start_Date)  VALUES ('Saumya','100000','2019-11-23'),('Rutuja','200000','2021-11-13')
+  select * from Employee_Payroll
+
+  Update Employee_Payroll 
+  set Gender='M' where name='Dnyanesh' or name='Mark' or name='Charlie' or name='Bobby' or name='Yash'
+  Update employee_payroll 
+  set Gender='F' where name='Saumya' or name='Rutuja'
