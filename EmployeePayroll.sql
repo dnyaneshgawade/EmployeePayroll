@@ -12,3 +12,6 @@ CREATE TABLE Employee_Payroll (
 
 
   INSERT INTO Employee_Payroll (Name,Salary,Start_Date)  VALUES ('Dnyanesh','150000','2018-01-03'),('Mark','200000','2019-11-13'),('Charlie','30000','2020-05-21'),('Bobby','150000','2017-01-03'),('Yash','780000','2016-10-15');
+
+
+  select * from Employee_Payroll
