@@ -15,3 +15,7 @@ CREATE TABLE Employee_Payroll (
 
 
   select * from Employee_Payroll
+
+  Select Salary from  Employee_Payroll where Name='Dnyanesh'
+
+  Select Salary from Employee_Payroll where Start_Date between ('2018-01-01') and ('2020-12-31')
