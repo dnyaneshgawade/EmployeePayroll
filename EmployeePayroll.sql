@@ -55,3 +55,37 @@ CREATE TABLE Employee_Payroll (
  SELECT COUNT(Name) as Total_Count_Of_Female_Employee FROM Employee_Payroll WHERE Gender = 'F' GROUP BY Gender
 
  SELECT COUNT(Name) as Total_Count_Of_Male_Employee FROM Employee_Payroll WHERE Gender = 'M' GROUP BY Gender
+
+
+
+
+ ALTER TABLE Employee_Payroll ALTER COLUMN Salary float
+
+ Select * from Employee_Payroll
+
+
+ alter table Employee_Payroll Add PhoneNumber float
+ alter table Employee_Payroll Add Address varchar(20)
+ alter table Employee_Payroll Add Department varchar(20)
+ ALTER TABLE Employee_Payroll ALTER COLUMN  Department varchar(20) not null
+
+ Update Employee_Payroll 
+  set PhoneNumber=99000000000 ,Address='Pune', Department='Devloper' where name='Dnyanesh'
+
+  Update Employee_Payroll 
+  set PhoneNumber=99000000000 ,Address='Mumbai', Department='Hr' where name='Mark'
+
+  Update Employee_Payroll 
+  set PhoneNumber=99000000000 ,Address='Goa', Department='Salse' where name='Charlie'
+
+  Update Employee_Payroll 
+  set PhoneNumber=99000000000 ,Address='Delhi', Department='Account' where name='Bobby'
+
+  Update Employee_Payroll 
+  set PhoneNumber=99000000000 ,Address='Panjab', Department='Devloper' where name='Yash'
+
+  Update Employee_Payroll 
+  set PhoneNumber=99000000000 ,Address='Chennai', Department='Hr' where name='Saumya'
+
+  Update Employee_Payroll 
+  set PhoneNumber=99000000000 ,Address='Kolhapur', Department='Salse' where name='Rutuja'
