@@ -134,3 +134,22 @@ CREATE TABLE Employee_Payroll (
   alter table Employee_Payroll drop column Salary
   select * from Employee_Payroll
 
+
+  --UC10
+
+  insert into Employee_Payroll(Name,PhoneNumber,Address,Department,Gender,Basic_Pay,Deductions,Taxable_Pay,Income_Tax,Net_Pay,Start_Date)
+  values
+  ('Terissa',7878787878,'Mumbai','Salse','F',50000,10000,5000,2000,40000,'2018-12-10')
+
+
+  insert into Employee_Payroll(Name,PhoneNumber,Address,Department,Gender,Basic_Pay,Deductions,Taxable_Pay,Income_Tax,Net_Pay,Start_Date)
+  values
+  ('Terissa',9898989898,'Goa','Marketing','F',55000,10000,5000,2000,45000,'2021-02-01')
+
+  select * from Employee_Payroll where Name='Terissa'
+
+  Update Employee_Payroll 
+  set Basic_Pay=30000,Deductions=4000, Taxable_Pay=1500,Income_Tax=900,Net_Pay=26000 where name='Terissa'
+
+  Update Employee_Payroll 
+  set Basic_Pay=50000 ,Deductions=10000, Taxable_Pay=7000,Income_Tax=4000,Net_Pay=40000 where Id=8
