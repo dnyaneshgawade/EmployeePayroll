@@ -287,3 +287,15 @@ ON EmpDetails.EmpId = SalaryDetails.Emp_Id
 GROUP BY EmpDetails.GenderId
 
 
+
+--UC12
+
+SELECT * FROM EmpDetails
+SELECT * FROM SalaryDetails
+SELECT * FROM GenderInfo
+SELECT * FROM DeptDetails
+
+
+SELECT * FROM EmpDetails e, SalaryDetails s,GenderInfo g,DeptDetails d where e.EmpId=Emp_Id and e.GenderId=g.GenderId and e.Dept_id=d.DeptId
+
+
